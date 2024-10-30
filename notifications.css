@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    font-size: 2em;
+    color: #1c87c9;
+    padding: 10px 20px;
+    border: 2px solid #1c87c9;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.countdown.expired {
+    color: #ff4f4f;
+    border-color: #ff4f4f;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: #fff;
+    }
+    50% {
+        transform: scale(1.05);
+        background-color: #f0f8ff;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #fff;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1c87c9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #155d8a;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .countdown {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
+
+    a {
+        padding: 8px 16px;
+    }
+}

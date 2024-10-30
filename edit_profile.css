@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8ecf3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+form.two-group-form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+}
+
+.column-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="phone"],
+input[type="password"],
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="phone"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e8bc3;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    background-color: #186b9d;
+    transform: translateY(0);
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #8f4304;
+    border-bottom: #831a00;
+}
+
+@media (max-width: 600px) {
+    form.two-group-form {
+        flex-direction: column;
+        padding: 30px;
+    }
+}
